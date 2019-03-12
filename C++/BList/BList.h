@@ -2,11 +2,6 @@
 /*!
 \file   BList.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS280
-\par    Assignment #2
-\date   2/8/2017
 */
 /******************************************************************************/
 #ifndef BLIST_H
