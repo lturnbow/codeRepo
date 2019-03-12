@@ -1,3 +1,5 @@
+# Lauren Turnbow
+# Affine decoding scheme
 def affineencode(a, b, s):
 	l = {}
 	l["a"] = 0
