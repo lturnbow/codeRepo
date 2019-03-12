@@ -1,3 +1,6 @@
+# Lauren Turnbow
+# Linear Equation Solver
+
 import numpy as np
 import math
 
