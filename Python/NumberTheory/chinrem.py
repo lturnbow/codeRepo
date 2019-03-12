@@ -1,3 +1,6 @@
+# Lauren Turnbow
+# Chinese Remainder Theorem
+
 from operator import mul, mod
 from functools import reduce
 import math
