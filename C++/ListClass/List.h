@@ -2,11 +2,6 @@
 /*!
 \file   List.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS170
-\par    Assignment #5
-\date   3/23/2016
   This file contains the prototypes of the functions and data members that 
   will be implemented in a singly linked list
 */
