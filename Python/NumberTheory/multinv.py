@@ -1,3 +1,5 @@
+# Lauren Turnbow
+# Calculating multiplicative inverse
 import math
 
 def multinv(a, m):
