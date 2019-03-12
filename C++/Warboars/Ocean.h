@@ -2,11 +2,6 @@
 /*!
 \file   Ocean.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS170
-\par    Assignment #2
-\date   2/11/2016
 \brief  
     This file includes the Ocean class member functions, private members, and
 	public members.
