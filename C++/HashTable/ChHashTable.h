@@ -2,11 +2,6 @@
 /*!
 \file   ChHashTable.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS280
-\par    Assignment #5
-\date   4/13/2017
 */
 /******************************************************************************/
 #ifndef OAHASHTABLEH
