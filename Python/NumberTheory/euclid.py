@@ -1,3 +1,5 @@
+# Lauren Turnbow
+# Calculating greatest common denominator
 import numpy as np
 
 def Euclid(num1, num2):
