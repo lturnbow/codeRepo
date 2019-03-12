@@ -2,11 +2,6 @@
 /*!
 \file   BSTree.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS280
-\par    Assignment #4
-\date   3/26/2017
 */
 /******************************************************************************/
 //---------------------------------------------------------------------------
