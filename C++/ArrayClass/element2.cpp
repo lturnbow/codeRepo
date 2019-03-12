@@ -2,11 +2,6 @@
 /*!
 \file   element2.cpp
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS225
-\par    Assignment #4
-\date   11/6/2016
 \brief
 Implementation of element2 class
 */
