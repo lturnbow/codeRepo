@@ -598,11 +598,10 @@ void ObjectAllocator::updateDeallocations(void)
 	oastats.ObjectsInUse_--;
 }
 
-////////////////////////////////Extra Credit////////////////////////////////////
 /******************************************************************************/
 /*!
 \brief
-Frees all empty pages (extra credit)
+Frees all empty pages 
 
 \return
 Number of pages free
