@@ -2,12 +2,6 @@
 /*!
 \file   Vector.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS170
-\par    MegaLab Assignment
-\date   4/6/2016
-
 */
 /******************************************************************************/
 ////////////////////////////////////////////////////////////////////////////////
