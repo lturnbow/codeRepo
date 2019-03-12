@@ -2,11 +2,6 @@
 /*!
 \file   perm-jt.h
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS330
-\par    Lab 1
-\date   11/22/17
 */
 /******************************************************************************/
 #ifndef PERM_JOHNSON_TROTTER_H
