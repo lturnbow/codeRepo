@@ -1,7 +1,5 @@
 /* 
 Lauren Turnbow
-10/2/2016
-CS225
 */
 #include <stdio.h>
 #include <stdlib.h>
