@@ -2,11 +2,6 @@
 /*!
 \file   BSTree.cpp
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS280
-\par    Assignment #4
-\date   3/26/2017
 */
 /******************************************************************************/
 #include "ObjectAllocator.h"
@@ -16,10 +11,8 @@
 /*!
 	\brief
 		BST Constructor
-
 	\param OA
 		ObjectAllocator pointer
-
 	\param ShareOA
 		Bool if object will be shared
 */
@@ -46,7 +39,6 @@ BSTree<T>::BSTree(ObjectAllocator *OA, bool ShareOA) : allocate(OA), created(fal
 /*!
 	\brief
 		Copy constructor
-
 	\param rhs
 		Object to be copied
 */
@@ -70,10 +62,8 @@ BSTree<T>::BSTree(const BSTree& rhs) : allocate(rhs.allocate), created(rhs.creat
 /*!
 	\brief
 		Assignment operator
-
 	\param rhs
 		Object to be assigned
-
 	\return
 		Returns new object that was assigned
 */
@@ -90,7 +80,6 @@ typename BSTree<T>::BSTree& BSTree<T>::operator=(const BSTree& rhs)
 /*!
 	\brief
 		Inserts value into the tree
-
 	\param value
 		Value to insert
 */
@@ -105,13 +94,10 @@ void BSTree<T>::insert(const T& value)
 /*!
 	\brief
 		Finds a value in the tree
-
 	\param value
 		Value to be found
-
 	\param compares
 		Number of comparisons made before value was found
-
 	\return
 		Returns if the value was found
 */
@@ -127,7 +113,6 @@ bool BSTree<T>::find(const T& value, unsigned &compares) const
 /*!
 	\brief
 		Determines if the tree is empty
-
 	\return
 		Returns if the tree is empty or not
 */
@@ -140,9 +125,6 @@ bool BSTree<T>::empty(void) const
 	return false;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////Root Functions////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************/
 /*!
 	\brief
@@ -150,7 +132,6 @@ bool BSTree<T>::empty(void) const
 
 	\param value
 		Value to be stored in the new node
-
 	\return
 		Returns a pointer to the new node
 */
@@ -181,7 +162,6 @@ typename BSTree<T>::BinTree BSTree<T>::make_node(const T& value)
 /*!
 	\brief
 		Returns the root
-
 	\return
 		The root
 */
@@ -193,7 +173,6 @@ typename BSTree<T>::BinTree BSTree<T>::root(void) const { return root_; }
 /*!
 	\brief
 		Returns a reference to the root
-
 	\return
 		Reference to the root
 */
@@ -205,9 +184,6 @@ typename BSTree<T>::BinTree& BSTree<T>::get_root(void)
 	return refRoot;
 }
 
-////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////Removal Functions////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************/
 /*!
 	\brief
@@ -227,7 +203,6 @@ BSTree<T>::~BSTree()
 /*!
 	\brief
 		Frees a node
-
 	\param node
 		Node to be freed
 */
@@ -243,7 +218,6 @@ void BSTree<T>::free_node(BinTree node)
 /*!
 	\brief
 		Removes an item in the tree
-
 	\param value
 		Value to be removed
 */
@@ -260,17 +234,12 @@ void BSTree<T>::remove(const T& value) { DeleteItem(root_, value); }
 template<typename T>
 void BSTree<T>::clear(void) { TraverseDelete(&root_); }
 
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////Height Functions////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************/
 /*!
 	\brief
 		Calculates the height of the tree and returns. Recursive function
-
 	\param tree
 		Tree of which we are trying to find the height
-
 	\return
 		Height
 */
@@ -289,10 +258,8 @@ int BSTree<T>::tree_height(BinTree tree) const
 /*!
 	\brief
 		Finds predecessor
-
 	\param tree
 		Current tree
-
 	\param predecessor
 		Gives current predecessor
 */
@@ -309,7 +276,6 @@ void BSTree<T>::find_predecessor(BinTree tree, BinTree &predecessor) const
 /*!
 	\brief
 		Finds the number of nodes in the tree
-
 	\return
 		Returns the number of nodes
 */
@@ -326,7 +292,6 @@ unsigned int BSTree<T>::size(void) const
 /*!
 	\brief
 		Returns the height calculated by the tree height function
-
 	\return
 		The height
 */
@@ -337,23 +302,17 @@ int BSTree<T>::height(void) const
 	int h = tree_height(root_);
 	return h;
 }
-////////////////////////////////////////////////////////////////////////////////
-/////////////////////////Helper Functions from Website//////////////////////////
-////////////////////////////////////////////////////////////////////////////////
+
 /******************************************************************************/
 /*!
 	\brief
 		Finding an item if it exists
-
 	\param tree
 		Tree to be looking in
-
 	\param Data
 		Data to be looking for
-
 	\param compares
 		Number of comparisons done while looking
-
 	\return
 		Returns if item exists
 */
@@ -376,10 +335,8 @@ bool BSTree<T>::ItemExists(BinTree tree, T Data, unsigned &compares) const
 /*!
 	\brief
 		Inserts an item into the tree
-
 	\param tree
 		Tree to be inserted into
-
 	\param Data
 		Data the item has
 */
@@ -406,10 +363,8 @@ void BSTree<T>::InsertItem(BinTree &tree, T Data)
 /*!
 	\brief
 		Deletes an item in the tree
-
 	\param tree
 		Tree to be deleted from
-
 	\return Data
 		Data to be deleted
 */
@@ -456,17 +411,12 @@ void BSTree<T>::DeleteItem(BinTree &tree, T Data)
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////Helper Functions/////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
 /******************************************************************************/
 /*!
 	\brief
 		Traverses through the tree and sets all of the counts to the rhscount
-
 	\param tree
 		Tree that we are assigning to
-
 	\param rhsTree
 		Tree that we are assigning the values from
 */
@@ -485,7 +435,6 @@ void BSTree<T>::TraverseCounter(BinTree tree, BinTree rhsTree)
 /*!
 	\brief
 		Traversing through the tree and deleting all of the nodes
-
 	\param tree
 		Tree that we are deleting from
 */
@@ -506,7 +455,6 @@ void BSTree<T>::TraverseDelete(BinTree* tree)
 /*!
 	\brief
 		Recursive function that takes off nodes of the tree
-
 	\param tree
 		Tree to be chopped
 */
@@ -525,7 +473,6 @@ void BSTree<T>::chop(BinTree tree)
 /*!
 	\brief
 		Copies data to the tree
-
 	\param tree
 		Tree to be copied
 */
@@ -540,15 +487,12 @@ void BSTree<T>::copy(BinTree tree)
 	copy(tree->right);
 }
 
-/************************************Extra Credit***************************************/
 /******************************************************************************/
 /*!
 	\brief
 		Subscript operator
-
 	\param index
 		Index to be found
-
 	\return
 		Returns BinTree at that index
 */
@@ -586,23 +530,9 @@ const typename BSTree<T>::BinTreeNode* BSTree<T>::operator[](int index) const
 /******************************************************************************/
 /*!
 	\brief
-		If extra credit is implemented
-
-	\returns
-		Returns if it's implemented
-*/
-/******************************************************************************/
-template<typename T>
-bool BSTree<T>::ImplementedIndexing(void) { return true; }
-
-/******************************************************************************/
-/*!
-	\brief
 		In order traversal of the tree to put all of the nodes in a stack
-
 	\param tree
 		Takes the tree to traverse
-
 	\param nodes
 		The stack to store the tree in
 */
