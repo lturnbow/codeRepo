@@ -24,9 +24,6 @@
     - list_count
     - node_count
     - new_node
-    
-    Hours spent on assignment: 1
-
 */
 /******************************************************************************/
 namespace CS170
