@@ -36,9 +36,6 @@
     - grow
     - selection_sort
     - bsearch
-    
-    Hours spend on this assignment: 1
-
 */
 /******************************************************************************/
 #include "Vector.h"
