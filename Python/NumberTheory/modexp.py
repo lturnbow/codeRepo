@@ -1,3 +1,6 @@
+# Lauren Turnbow
+# Calculating modulus with exponentiation
+
 import math
 
 def modexp(a, x, m):
