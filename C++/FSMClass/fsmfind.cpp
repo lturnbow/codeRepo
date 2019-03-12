@@ -2,11 +2,6 @@
 /*!
 \file   fsmfind.cpp
 \author Lauren Turnbow
-\par    email: lauren.turnbow\@digipen.edu
-\par    DigiPen login: lauren.turnbow
-\par    Course: CS225
-\par    Assignment 5
-\date   11/30/2016
 */
 /******************************************************************************/
 #include "fsmfind.h"
