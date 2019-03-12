@@ -1,3 +1,5 @@
+# Lauren Turnbow
+# Calculating prime divisors
 import math
 import numpy as np
 
