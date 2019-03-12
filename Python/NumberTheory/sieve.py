@@ -1,3 +1,5 @@
+# Lauren Turnbow
+# Calculating list of primes using sieve of Eratosthenes 
 import math
 
 def SieveOfEratosthenes(a, b):
