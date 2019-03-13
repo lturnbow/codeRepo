@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+		</script>
+	</head>
+	<body>
+
+		<h1>Compass: </h1>
+		<h2> </h2>
+		<th>Compass_X represents the x component of the magnetic field. </th>
+		<th>Compass_Y represents the y component of the magnetic field.</th>
+		<th>There are 12 values taken once every 5 seconds for a minute</th>
+		<h2> </h2>
+		{{ chart.as_html }}
+		
+	</body>
+
+</html>

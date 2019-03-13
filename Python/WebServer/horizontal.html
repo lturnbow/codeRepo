@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+		</script>
+	</head>
+	<body>
+
+		<h1>Horizontal: </h1>
+		<h2> </h2>
+		<th>Horiz1 is the electric field of the first horizontal probe. </th>
+		<th>Horiz2 is the electric field of the second horizontal probe. </th>
+		<th>HorizD is the difference betweeen the electric fields of the two probes. </th>
+		<th>There are 12 values averaged, taken once per 5 seconds for a minute</th>
+		<h2> </h2>
+		{{ chart.as_html }}
+		
+	</body>
+
+</html>

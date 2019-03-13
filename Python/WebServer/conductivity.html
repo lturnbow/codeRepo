@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load("visualization", "1", {packages:["corechart"]});
+		</script>
+	</head>
+	<body>
+
+		<h1>Conductivity: </h1>
+		<h2> </h2>
+		<th>This graph shows the conductivity data for vertical probes 1 and 2. </th>
+		<th>The raw adc value. The data is taken once every 4 seconds for a minute, and averaged.</th>
+		<h2> </h2>
+		{{ chart.as_html }}
+		
+	</body>
+
+</html>

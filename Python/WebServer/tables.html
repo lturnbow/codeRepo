@@ -1,0 +1,288 @@
+<!doctype html>
+<html>
+    <head>
+		
+    </head>
+    <body>
+		<h2>GPS Table</h2>
+		<table>
+			<tr>
+				<th>DayTime</th>
+				<th>Version</th>
+				<th>Error</th>
+				<th>Sequence</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+				<th>Altitude</th>
+			</tr>
+			
+			{% for item in data %}
+			<tr>
+			<td>{{ item.DayTime }}</td>
+			<td align="center">{{ item.Version }} </td>
+			<td align="center">{{ item.E }} </td>
+			<td align="center">{{ item.Sequence }} </td>
+			<td align="center">{{ item.Latitude }} </td>
+			<td align="center">{{ item.Longitude }} </td>
+			<td align="center">{{ item.Altitude }} </td>
+			</tr>
+			{% endfor %}
+		
+		</table>
+		
+<!-- --------------------------------------------------------------- -->	
+		
+		<h2>Vertical Table</h2>
+		<table>
+			<tr>
+				<th>DayTime</th>
+				<th>Vert1</th>
+				<th>Vert2</th>
+				<th>VertD</th>
+			</tr>
+			{% for item1 in data1 %}
+			<tr>
+			<td align="center">{{ item1.DayTime }}</td>
+			<td align="center">{{ item1.Vert1 }}</td>
+			<td align="center">{{ item1.Vert2 }}</td>
+			<td align="center">{{ item1.VertD }}</td>
+			</tr>
+			{% endfor %}
+		
+		</table>
+
+<!-- --------------------------------------------------------------- -->	
+
+		<h2>Horizontal Table</h2>
+		<table>
+			<tr>
+				<th>DayTime</th>
+				<th>Horiz1_1</th>
+				<th>Horiz1_2</th>
+				<th>Horiz1_3</th>
+				<th>Horiz1_4</th>
+				<th>Horiz1_5</th>
+				<th>Horiz1_6</th>
+				<th>Horiz1_7</th>
+				<th>Horiz1_8</th>
+				<th>Horiz1_9</th>
+				<th>Horiz1_10</th>
+				<th>Horiz1_11</th>
+				<th>Horiz1_12</th>
+				<th>Horiz2_1</th>
+				<th>Horiz2_2</th>
+				<th>Horiz2_3</th>
+				<th>Horiz2_4</th>
+				<th>Horiz2_5</th>
+				<th>Horiz2_6</th>
+				<th>Horiz2_7</th>
+				<th>Horiz2_8</th>
+				<th>Horiz2_9</th>
+				<th>Horiz2_10</th>
+				<th>Horiz2_11</th>
+				<th>Horiz2_12</th>
+				<th>HorizD_1</th>
+				<th>HorizD_2</th>
+				<th>HorizD_3</th>
+				<th>HorizD_4</th>
+				<th>HorizD_5</th>
+				<th>HorizD_6</th>
+				<th>HorizD_7</th>
+				<th>HorizD_8</th>
+				<th>HorizD_9</th>
+				<th>HorizD_10</th>
+				<th>HorizD_11</th>
+				<th>HorizD_12</th>
+			</tr>
+			
+			{% for item2 in data2 %}
+			<tr>
+			<td align="center">{{ item2.DayTime }}</td>
+			<td align="center">{{ item2.Horiz1_1 }}</td>
+			<td align="center">{{ item2.Horiz1_2 }}</td>
+			<td align="center">{{ item2.Horiz1_3 }}</td>
+			<td align="center">{{ item2.Horiz1_4 }}</td>
+			<td align="center">{{ item2.Horiz1_5 }}</td>
+			<td align="center">{{ item2.Horiz1_6 }}</td>
+			<td align="center">{{ item2.Horiz1_7 }}</td>
+			<td align="center">{{ item2.Horiz1_8 }}</td>
+			<td align="center">{{ item2.Horiz1_9 }}</td>
+			<td align="center">{{ item2.Horiz1_10 }}</td>
+			<td align="center">{{ item2.Horiz1_11 }}</td>
+			<td align="center">{{ item2.Horiz1_12 }}</td>
+			<td align="center">{{ item2.Horiz2_1 }}</td>
+			<td align="center">{{ item2.Horiz2_2 }}</td>
+			<td align="center">{{ item2.Horiz2_3 }}</td>
+			<td align="center">{{ item2.Horiz2_4 }}</td>
+			<td align="center">{{ item2.Horiz2_5 }}</td>
+			<td align="center">{{ item2.Horiz2_6 }}</td>
+			<td align="center">{{ item2.Horiz2_7 }}</td>
+			<td align="center">{{ item2.Horiz2_8 }}</td>
+			<td align="center">{{ item2.Horiz2_9 }}</td>
+			<td align="center">{{ item2.Horiz2_10 }}</td>
+			<td align="center">{{ item2.Horiz2_11 }}</td>
+			<td align="center">{{ item2.Horiz2_12 }}</td>
+			<td align="center">{{ item2.HorizD_1 }}</td>
+			<td align="center">{{ item2.HorizD_2 }}</td>
+			<td align="center">{{ item2.HorizD_3 }}</td>
+			<td align="center">{{ item2.HorizD_4 }}</td>
+			<td align="center">{{ item2.HorizD_5 }}</td>
+			<td align="center">{{ item2.HorizD_6 }}</td>
+			<td align="center">{{ item2.HorizD_7 }}</td>
+			<td align="center">{{ item2.HorizD_8 }}</td>
+			<td align="center">{{ item2.HorizD_9 }}</td>
+			<td align="center">{{ item2.HorizD_10 }}</td>
+			<td align="center">{{ item2.HorizD_11 }}</td>
+			<td align="center">{{ item2.HorizD_12 }}</td>
+			</tr>
+			{% endfor %}
+		
+		</table>
+
+<!-- --------------------------------------------------------------- -->	
+		
+		<h2>Compass Table</h2>
+		<table>
+			<tr>
+				<th>DayTime</th>
+				<th>CompassX_1</th>
+				<th>CompassX_2</th>
+				<th>CompassX_3</th>
+				<th>CompassX_4</th>
+				<th>CompassX_5</th>
+				<th>CompassX_6</th>
+				<th>CompassX_7</th>
+				<th>CompassX_8</th>
+				<th>CompassX_9</th>
+				<th>CompassX_10</th>
+				<th>CompassX_11</th>
+				<th>CompassX_12</th>
+				<th>CompassY_1</th>
+				<th>CompassY_2</th>
+				<th>CompassY_3</th>
+				<th>CompassY_4</th>
+				<th>CompassY_5</th>
+				<th>CompassY_6</th>
+				<th>CompassY_7</th>
+				<th>CompassY_8</th>
+				<th>CompassY_9</th>
+				<th>CompassY_10</th>
+				<th>CompassY_11</th>
+				<th>CompassY_12</th>
+			
+			</tr>
+			{% for item3 in data3 %}
+			<tr>
+			<td align="center">{{ item3.DayTime }}</td>
+			<td align="center">{{ item3.CompassX_1 }}</td>
+			<td align="center">{{ item3.CompassX_2 }}</td>
+			<td align="center">{{ item3.CompassX_3 }}</td>
+			<td align="center">{{ item3.CompassX_4 }}</td>
+			<td align="center">{{ item3.CompassX_5 }}</td>
+			<td align="center">{{ item3.CompassX_6 }}</td>
+			<td align="center">{{ item3.CompassX_7 }}</td>
+			<td align="center">{{ item3.CompassX_8 }}</td>
+			<td align="center">{{ item3.CompassX_9 }}</td>
+			<td align="center">{{ item3.CompassX_10 }}</td>
+			<td align="center">{{ item3.CompassX_11 }}</td>
+			<td align="center">{{ item3.CompassX_12 }}</td>
+			<td align="center">{{ item3.CompassY_1 }}</td>
+			<td align="center">{{ item3.CompassY_2 }}</td>
+			<td align="center">{{ item3.CompassY_3 }}</td>
+			<td align="center">{{ item3.CompassY_4 }}</td>
+			<td align="center">{{ item3.CompassY_5 }}</td>
+			<td align="center">{{ item3.CompassY_6 }}</td>
+			<td align="center">{{ item3.CompassY_7 }}</td>
+			<td align="center">{{ item3.CompassY_8 }}</td>
+			<td align="center">{{ item3.CompassY_9 }}</td>
+			<td align="center">{{ item3.CompassY_10 }}</td>
+			<td align="center">{{ item3.CompassY_11 }}</td>
+			<td align="center">{{ item3.CompassY_12 }}</td>
+			</tr>
+			{% endfor %}
+		
+		</table>
+
+<!-- --------------------------------------------------------------- -->	
+
+		<h2>Conductivity Table</h2>
+		<table>
+			<tr>
+				<th>DayTime</th>
+				<th>cVert1_1</th>
+				<th>cVert1_2</th>
+				<th>cVert1_3</th>
+				<th>cVert1_4</th>
+				<th>cVert1_5</th>
+				<th>cVert1_6</th>
+				<th>cVert1_7</th>
+				<th>cVert1_8</th>
+				<th>cVert1_9</th>
+				<th>cVert1_10</th>
+				<th>cVert1_11</th>
+				<th>cVert1_12</th>
+				<th>cVert1_13</th>
+				<th>cVert1_14</th>
+				<th>cVert1_15</th>
+				<th>cVert2_1</th>
+				<th>cVert2_2</th>
+				<th>cVert2_3</th>
+				<th>cVert2_4</th>
+				<th>cVert2_5</th>
+				<th>cVert2_6</th>
+				<th>cVert2_7</th>
+				<th>cVert2_8</th>
+				<th>cVert2_9</th>
+				<th>cVert2_10</th>
+				<th>cVert2_11</th>
+				<th>cVert2_12</th>
+				<th>cVert2_13</th>
+				<th>cVert2_14</th>
+				<th>cVert2_15</th>
+				<th>Time Constant</th>
+			</tr>
+			{% for item4 in data4 %}
+			<tr>
+			<td align="center">{{ item4.DayTime }}</td>
+			<td align="center">{{ item4.cVert1_1 }}</td>
+			<td align="center">{{ item4.cVert1_2 }}</td>
+			<td align="center">{{ item4.cVert1_3 }}</td>
+			<td align="center">{{ item4.cVert1_4 }}</td>
+			<td align="center">{{ item4.cVert1_5 }}</td>
+			<td align="center">{{ item4.cVert1_6 }}</td>
+			<td align="center">{{ item4.cVert1_7 }}</td>
+			<td align="center">{{ item4.cVert1_8 }}</td>
+			<td align="center">{{ item4.cVert1_9 }}</td>
+			<td align="center">{{ item4.cVert1_10 }}</td>
+			<td align="center">{{ item4.cVert1_11 }}</td>
+			<td align="center">{{ item4.cVert1_12 }}</td>
+			<td align="center">{{ item4.cVert1_13 }}</td>
+			<td align="center">{{ item4.cVert1_14 }}</td>
+			<td align="center">{{ item4.cVert1_15 }}</td>
+			<td align="center">{{ item4.cVert2_1 }}</td>
+			<td align="center">{{ item4.cVert2_2 }}</td>
+			<td align="center">{{ item4.cVert2_3 }}</td>
+			<td align="center">{{ item4.cVert2_4 }}</td>
+			<td align="center">{{ item4.cVert2_5 }}</td>
+			<td align="center">{{ item4.cVert2_6 }}</td>
+			<td align="center">{{ item4.cVert2_7 }}</td>
+			<td align="center">{{ item4.cVert2_8 }}</td>
+			<td align="center">{{ item4.cVert2_9 }}</td>
+			<td align="center">{{ item4.cVert2_10 }}</td>
+			<td align="center">{{ item4.cVert2_11 }}</td>
+			<td align="center">{{ item4.cVert2_12 }}</td>
+			<td align="center">{{ item4.cVert2_13 }}</td>
+			<td align="center">{{ item4.cVert2_14 }}</td>
+			<td align="center">{{ item4.cVert2_15 }}</td>
+			<td align="center">{{ item4.TimeConstant }}</td>
+			
+			</tr>
+			{% endfor %}
+		
+		</table>
+		
+		<p><a href="/Desktop/{{ file }}" download>{{ file.name }}</a></p>
+		
+
+    </body>
+</html>
